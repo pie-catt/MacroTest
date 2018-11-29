@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{665B0947-4DB5-45FF-8F92-A92D3065608F}</ProjectGuid>
+    <ProjectGuid>{C6E08DB5-E25D-40DA-862B-23B63CA41519}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lab_TAP_4</RootNamespace>
-    <AssemblyName>Lab_TAP_4</AssemblyName>
+    <RootNamespace>lab_TAP_4.Tests</RootNamespace>
+    <AssemblyName>lab_TAP_4.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -60,8 +60,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MacroClass.cs" />
+    <Compile Include="MacroTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab_TAP_4\Lab_TAP_4.csproj">
+      <Project>{665b0947-4db5-45ff-8f92-a92d3065608f}</Project>
+      <Name>Lab_TAP_4</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
