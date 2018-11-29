@@ -19,7 +19,25 @@ namespace Lab_TAP_4
                 return sequence;
 
             List<T> newList = new List<T>();
+          /*Con Iterators
+            IEnumerator<T> _sequeEnumerator = sequence.GetEnumerator();
 
+            while (_sequeEnumerator.MoveNext())
+            {
+                if (_sequeEnumerator.Current.Equals(value))
+                {            
+                IEnumerator<T> __newValEnum = newValues.GetEnumerator();
+
+                    while (__newValEnum.MoveNext())
+                    {
+                        newList.Add(__newValEnum.Current);
+                    }
+                   //_newVaEnum.reset();
+                }  
+               else newList.Add(_sequeEnumerator.Current);
+            }
+
+    */
             foreach (var s in sequence)
             {
                 if(s.Equals(value))
