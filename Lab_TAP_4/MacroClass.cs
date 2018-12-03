@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab_TAP_4 {
     public class MacroClass {
@@ -33,6 +31,14 @@ namespace Lab_TAP_4 {
             }
 
             return newSequence;
+        }
+
+        public static void Main()
+        {
+            MacroExpansion(new[] { 1, 2, 1, 2, 3 }, 2, new[] { 7, 8, 9 })
+                .ToList()
+                .ForEach(Console.Write);
+            Console.ReadLine();
         }
 
     }
